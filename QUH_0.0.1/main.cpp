@@ -4,6 +4,9 @@
     -----------------------------------------------------------------------------------
     Move all numbers to the marked spot!
 
+    Current state:
+     - cheching for game dynamics and functionality
+     - still figuiring how to achieve the goal of the game
 
     TODO:
     Basic:
@@ -21,7 +24,6 @@
 */
 
 
-#include <stdio.h>
 #include <iostream>
 
 using namespace std;
@@ -32,7 +34,7 @@ struct game {
     int dif = 11;
     bool run = true;
     bool state = false;
-    int quh[8][8];
+    int quh[9][9] = {};
 }game;
 
 void initializeQuh() {
@@ -65,7 +67,7 @@ void step() {
 
 bool checkPrime(int num) {
     int pd = game.quh[num / 10][num % 10];
-    if (pd == 2 | pd == 3 | pd == 5 | pd == 7 )
+    if (pd == 2 || pd == 3 || pd == 5 || pd == 7 )
     {
         cout << "prime ";
         return true;
