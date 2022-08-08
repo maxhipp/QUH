@@ -1,1 +1,4 @@
-# QUH_0.0.1
+# QUH
+by Max Hipp 2022
+
+Currently under development, stay tuned!
